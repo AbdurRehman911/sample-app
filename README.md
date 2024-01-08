@@ -28,4 +28,24 @@ To setup, first create virtualenv and install dependencies via command:
       "last_name": ""
     }
     ```
-4. To generate token, use the following json ``` {"username" :"jhonnny3", "password":"abc123"}``` for the endpoint ``` http://localhost:8000/token/```
+
+4. To generate token, use the following json ``` {"username" :"jhonnny3", "password":"abc123"} ``` for the endpoint 
+
+   ``` http://localhost:8000/token/```
+
+5. To get the the courses details , use the token as authentication for the following endpoint
+
+   ``` http://localhost:8000/details ```
+
+6. To create course, use the following JSON 
+
+   ```
+      { 
+         "title" : "",
+         "description": "",
+         "instructor": pk,
+         "is_active": true
+      }
+
+   ```
+   for the endpoint ``` http://localhost:8000/courses/create/ ```
